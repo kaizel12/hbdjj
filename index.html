@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloader</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="header">
+        WEB DOWNLOADER FREE
+    </div>
+    <div class="footer">
+        License Kaizeljsh 2024
+    </div>
+    <i class="fas fa-asterisk tribal-icon"></i>
+
+    <!-- Full Screen Overlay -->
+    <div class="overlay">
+        <div class="overlay-content">
+            <i class="fas fa-times close-btn"></i>
+            <h2>About This Web App</h2>
+            <p>This web app allows you to download videos from TikTok, Instagram, Facebook, and YouTube with ease.</p>
+            <p>Click on the desired platform, enter the URL, and start downloading!</p>
+        </div>
+    </div>
+
+    <div class="scroll-container">
+        <div class="container">
+            <div class="section">
+                <div class="section-content">
+                    <h1><i class="fab fa-tiktok icon"></i>TikTok Downloader</h1>
+                    <form id="tiktok-form">
+                        <div class="input-container">
+                            <input type="url" id="tiktok-url" placeholder="Enter TikTok URL" required>
+                            <button type="submit" id="download-mp4" class="glow-button">Download MP4</button>
+                            <button type="button" id="download-audio" class="glow-button">Download Audio</button>
+                            <div id="tiktok-loading" class="loading-spinner"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-content">
+                    <h1><i class="fab fa-instagram icon"></i>Instagram Downloader</h1>
+                    <form id="instagram-form">
+                        <div class="input-container">
+                            <input type="url" id="instagram-url" placeholder="Enter Instagram URL" required>
+                            <button type="submit" class="glow-button">Download</button>
+                            <div id="instagram-loading" class="loading-spinner"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-content">
+                    <h1><i class="fab fa-facebook icon"></i>Facebook Downloader</h1>
+                    <form id="facebook-form">
+                        <div class="input-container">
+                            <input type="url" id="facebook-url" placeholder="Enter Facebook URL" required>
+                            <button type="submit" class="glow-button">Download</button>
+                            <div id="facebook-loading" class="loading-spinner"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-content">
+                    <h1><i class="fab fa-youtube icon"></i>YouTube Downloader</h1>
+                    <form id="youtube-form">
+                        <div class="input-container">
+                            <input type="url" id="youtube-url" placeholder="Enter YouTube URL" required>
+                            <button type="submit" class="glow-button">Download</button>
+                            <div id="youtube-loading" class="loading-spinner"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden download link -->
+    <a id="hidden-download" href="#" class="hidden-link"></a>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
